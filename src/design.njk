@@ -1,0 +1,17 @@
+---
+title: Designs
+permalink: /designs/
+---
+{% extends "base.njk" %}
+
+{% block content %}
+  <h2>Design Portfolio</h2>
+  <div class="portfolio">
+    {% for items in collections.design %}
+      <div class="photo">
+        <img src="{{ items.data.image }}" alt="{{ items.data.title }}">
+        <p>{{ items.data.title }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

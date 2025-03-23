@@ -1,10 +1,50 @@
 [
-  { "label": "Photo Taking", "slug": "photography", "icon": "" },
-  { "label": "Writing", "slug": "writing", "icon": "" },
-  { "label": "Reading", "slug": "bookshelf", "icon": "" },
-  { "label": "Designing", "slug": "portfolio", "icon": "" },
-  { "label": "Coding", "slug": "#", "icon": "" },
-  { "label": "Socializing", "slug": "#", "icon": "" },
-  { "label": "Coffee Drinking", "slug": "#", "icon": "" },
-  { "label": "Star Wars Loving", "slug": "#", "icon": "" }
+  {
+    "label": "Photo Taking",
+    "slug": "photos",
+    "icon": "images/camera.svg",
+    "image": "/images/tm-photo.webp"
+  },
+  {
+    "label": "Writing",
+    "slug": "writings",
+    "icon": "images/typewriter.svg",
+    "image": "/images/tm-blank.webp"
+  },
+  {
+    "label": "Reading",
+    "slug": "books",
+    "icon": "images/book.svg",
+    "image": "/images/tm-book.webp"
+  },
+  {
+    "label": "Designing",
+    "slug": "designs",
+    "icon": "images/design.svg",
+    "image": "/images/tm-design.webp"
+  },
+  {
+    "label": "Coding",
+    "slug": "#",
+    "icon": "images/code.svg",
+    "image": "/images/tm-work.webp"
+  },
+  {
+    "label": "Socializing",
+    "slug": "#",
+    "icon": "images/twitter.svg",
+    "image": "/images/tm-twitter.webp"
+  },
+  {
+    "label": "Coffee Drinking",
+    "slug": "#",
+    "icon": "images/coffee.svg",
+    "image": "/images/tm-coffee.webp"
+  },
+  {
+    "label": "Star Wars Loving",
+    "slug": "#",
+    "icon": "images/star-wars.svg",
+    "image": "/images/tm-jedi.webp"
+  }
 ]

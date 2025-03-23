@@ -51,7 +51,8 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0px;
+    pading: 0px;
     font-family: "Regular XL Soft", sans-serif;
     background-color: var(--darkgreen);
     background-image: url("/images/noise.webp") 50% 50%;
@@ -61,17 +62,20 @@ body {
 
 .container {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - var(--space-xs));
+    gap: var(--space-xs);
+    padding: var(--space-xs);
 }
 
 .sidebar-left {
-    width: 10%;
+    max-height: 100%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--darkgreen);
     border: 1px solid var(--limegreen);
-    border-radius: 12px;
+    border-radius: var(--space-xs);
 }
 
 .sidebar-left .logo {
@@ -83,40 +87,53 @@ body {
 .sidebar-left h1 {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: var(--step-1);
+    font-size: var(--step-2);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
     margin: var(--space-m) 0;
+    text-stroke: 1px var(--midgreen);
+    -webkit-text-stroke: 1px var(--midgreen);
 }
 
 .content {
-    width: 70%;
+    max-height: 100%;
     border: 1px solid var(--limegreen);
-    border-radius: 12px;
+    border-radius: var(--space-xs);
+    overflow: hidden;
 }
 
 #hero-image {
-    width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
+    aspect-ratio: 1/1;
 }
 
 .sidebar-right {
-    width: 20%;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-button {
+    font-family: "Regular XL Soft", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
     display: flex;
+    flex-grow: 2;
     align-items: center;
     width: 100%;
-    padding: var(--space-s);
+    padding: var(--space-m);
     margin-bottom: var(--space-xs);
     background-color: var(--blackgreen);
     color: var(--midgreen);
     border: 1px solid var(--limegreen);
-    border-radius: 12px;
-    font-size: var(--step--1);
+    border-radius: var(--space-xs);
+    font-size: var(--step-0);
     cursor: pointer;
 }
 
 .nav-button .icon {
-    margin-right: var(--space-xs);
+    margin-right: var(--space-m);
 }

@@ -10,7 +10,7 @@
   <div class="container">
     <aside class="sidebar-left">
       <div class="logo">T</div>
-      <h1>TANNER MARDIS</h1>
+      <h1>Tanner Mardis</h1>
     </aside>
     <main class="content">
       {% block content %}
@@ -19,8 +19,8 @@
     </main>
     <nav class="sidebar-right">
       {% for page in navigation %}
-        <button class="nav-button" data-page="{{ page.slug }}">
-          <span class="icon">{{ page.icon }}</span>
+        <button class="nav-button" data-page="{{ page.slug }}" data-image="{{ page.image }}">
+            <span class="icon"><img src="{{ page.icon | safe }}" alt="icon"></span>
           <span class="label">{{ page.label }}</span>
         </button>
       {% endfor %}

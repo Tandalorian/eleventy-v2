@@ -1,0 +1,17 @@
+---
+title: Photography
+permalink: /photography/
+---
+{% extends "base.njk" %}
+
+{% block content %}
+  <h2>Photography Portfolio</h2>
+  <div class="gallery">
+    {% for photo in collections.photography %}
+      <div class="photo">
+        <img src="{{ photo.data.image }}" alt="{{ photo.data.title }}">
+        <p>{{ photo.data.title }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
