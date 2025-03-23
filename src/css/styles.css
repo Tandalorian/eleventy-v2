@@ -1,0 +1,84 @@
+:root {
+  /* Utopia fluid type scale */
+  --step--2: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.80rem); /* Small text */
+  --step--1: clamp(0.83rem, calc(0.78rem + 0.26vw), 1.00rem); /* Body text */
+  --step-0: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem); /* Base size */
+  --step-1: clamp(1.20rem, calc(1.07rem + 0.65vw), 1.56rem); /* Headings */
+  --step-2: clamp(1.44rem, calc(1.25rem + 0.95vw), 1.95rem); /* Large headings */
+
+  /* Utopia fluid spacing */
+  --space-xs: clamp(0.25rem, calc(0.20rem + 0.26vw), 0.50rem); /* Small gaps */
+  --space-s: clamp(0.50rem, calc(0.40rem + 0.52vw), 1.00rem);  /* Medium gaps */
+  --space-m: clamp(1.00rem, calc(0.80rem + 1.04vw), 2.00rem);  /* Large gaps */
+
+  /* Colors */
+  --cream: #E0DED8;
+  --limegreen: #ABCF6F;
+  --mid-green: #52A36E;
+  --dark-green: #132320;
+  --black-green: #050807;
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--black-green);
+  color: var(--mid-green);
+  font-size: var(--step-0);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-left {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black-green);
+  border-right: 1px solid var(--limegreen);
+}
+
+.sidebar-left .logo {
+  font-size: var(--step-1);
+  color: var(--limegreen);
+  margin: var(--space-m);
+}
+
+.sidebar-left h1 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: var(--step-1);
+  margin: var(--space-m) 0;
+}
+
+.content {
+  width: 70%;
+  padding: var(--space-m);
+}
+
+.sidebar-right {
+  width: 20%;
+  background-color: var(--black-green);
+  border-left: 1px solid var(--limegreen);
+  padding: var(--space-s);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-s);
+  margin-bottom: var(--space-xs);
+  background-color: var(--black-green);
+  color: var(--mid-green);
+  border: 1px solid var(--limegreen);
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+
+.nav-button .icon {
+  margin-right: var(--space-xs);
+}

@@ -1,0 +1,10 @@
+[
+  { "label": "Photo Taking", "slug": "photography", "icon": "" },
+  { "label": "Writing", "slug": "writing", "icon": "" },
+  { "label": "Reading", "slug": "bookshelf", "icon": "" },
+  { "label": "Designing", "slug": "portfolio", "icon": "" },
+  { "label": "Coding", "slug": "#", "icon": "" },
+  { "label": "Socializing", "slug": "#", "icon": "" },
+  { "label": "Coffee Drinking", "slug": "#", "icon": "" },
+  { "label": "Star Wars Loving", "slug": "#", "icon": "" }
+]

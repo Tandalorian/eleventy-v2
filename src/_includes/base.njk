@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar-left">
+      <div class="logo">T</div>
+      <h1>TANNER MARDIS</h1>
+    </aside>
+    <main class="content">
+      {% block content %}
+        <!-- Page-specific content goes here -->
+      {% endblock %}
+    </main>
+    <nav class="sidebar-right">
+      {% for page in navigation %}
+        <button class="nav-button" data-page="{{ page.slug }}">
+          <span class="icon">{{ page.icon }}</span>
+          <span class="label">{{ page.label }}</span>
+        </button>
+      {% endfor %}
+    </nav>
+  </div>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>
