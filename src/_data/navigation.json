@@ -1,6 +1,6 @@
 [
   {
-    "label": "Photo Taking",
+    "label": "Photography",
     "slug": "photos",
     "icon": "images/camera.svg",
     "image": "/images/tm-photo.webp"
@@ -36,13 +36,13 @@
     "image": "/images/tm-twitter.webp"
   },
   {
-    "label": "Coffee Drinking",
+    "label": "Coffee",
     "slug": "#",
     "icon": "images/coffee.svg",
     "image": "/images/tm-coffee.webp"
   },
   {
-    "label": "Star Wars Loving",
+    "label": "Star Wars",
     "slug": "#",
     "icon": "images/star-wars.svg",
     "image": "/images/tm-jedi.webp"

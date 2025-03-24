@@ -62,9 +62,10 @@ body {
 
 .container {
     display: flex;
-    height: calc(100vh - var(--space-xs));
+    height: 100vh;
     gap: var(--space-xs);
     padding: var(--space-xs);
+    box-sizing: border-box;
 }
 
 .sidebar-left {
@@ -72,16 +73,19 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    gap: var(--space-m);
     align-items: center;
+    padding: var(--space-m);
     background-color: var(--darkgreen);
     border: 1px solid var(--limegreen);
     border-radius: var(--space-xs);
 }
-
 .sidebar-left .logo {
-    font-size: var(--step-1);
-    color: var(--limegreen);
-    margin: var(--space-m);
+    width: 50%;
+}
+
+.sidebar-left .logo img {
+    width: 100%;
 }
 
 .sidebar-left h1 {
@@ -96,6 +100,8 @@ body {
 }
 
 .content {
+    display: flex;
+    justify-content: center;
     max-height: 100%;
     border: 1px solid var(--limegreen);
     border-radius: var(--space-xs);
@@ -105,13 +111,15 @@ body {
 #hero-image {
     max-height: 100%;
     object-fit: contain;
-    transition: opacity 0.3s ease-in-out;
+    object-position: center;
+    transition: 0.3s ease-in-out;
     aspect-ratio: 1/1;
 }
 
 .sidebar-right {
     flex-grow: 2;
     display: flex;
+    gap: var(--space-xs);
     flex-direction: column;
     align-items: center;
 }
@@ -121,19 +129,24 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.25em;
     display: flex;
+    gap: var(--space-m);
     flex-grow: 2;
     align-items: center;
+    text-align: left;
     width: 100%;
-    padding: var(--space-m);
-    margin-bottom: var(--space-xs);
+    padding: 0px var(--space-m) 0px var(--space-m);
     background-color: var(--blackgreen);
     color: var(--midgreen);
     border: 1px solid var(--limegreen);
     border-radius: var(--space-xs);
     font-size: var(--step-0);
     cursor: pointer;
+    transition: 0.2s ease-out;
 }
 
-.nav-button .icon {
-    margin-right: var(--space-m);
+.nav-button:hover {
+    background-color: var(--darkgreen);
+    border: 1px solid var(--limegreen);
+    color: var(--cream);
+    gap: var(--space-s);
 }
